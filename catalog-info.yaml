@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: api-demo-bellinatti
+  description: "api-demo-bellinatti"
+  annotations:
+    github.com/project-slug: veecode-platform/api-demo-bellinatti
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "api-demo-bellinatti"
+    vault.io/secrets-path: "api-demo-bellinatti"
+    grafana/tag-selector: "api-demo-bellinatti"
+    grafana/alert-label-selector: "alertname=api-demo-bellinatti"
+    argocd/proxy-url: '/argocd/api'
+    argocd/app-name: "api-demo-bellinatti"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/admin"
+
+
+

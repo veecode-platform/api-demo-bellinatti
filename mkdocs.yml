@@ -1,0 +1,8 @@
+site_name: "api-demo-bellinatti"
+site_description: "api-demo-bellinatti"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
